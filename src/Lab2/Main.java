@@ -7,6 +7,13 @@ public class Main {
         System.out.println(printSomething(123,234));
         System.out.println(a+a);
         stuff1(1,10);
+        Dog cucu = new Dog();
+        Dog boop = new Dog();
+        cucu.name = "alabbala";
+        cucu.eat();
+        cucu.name();
+        boop.name();
+
     }
 
     public static int printSomething(int arg1, int arg2) {
