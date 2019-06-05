@@ -5,17 +5,19 @@ public class Vet {
     String vetName;
     String vetSpec;
 
-    public void SetVetName(String name) {
-        this.vetName = name;
+    public Vet() {
+        //Empty
+    }
+
+    public Vet(String vetName, String vetSpec) {
+        this.vetName = vetName;
+        this.vetSpec = vetSpec;
     }
 
     public String GetVetName() {
         return (this.vetName);
     }
 
-    public void SetVetSpec(String spec) {
-        this.vetSpec = spec;
-    }
 
     public String GetVetspec() {
         return (this.vetSpec);

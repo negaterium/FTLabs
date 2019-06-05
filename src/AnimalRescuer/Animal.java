@@ -9,20 +9,31 @@ public class Animal {
     int animalState;
     String animalPreferredFood;
 
-    public String GetAnimalType(){
-        return(this.animalType);
+    public Animal() {
+        //Empty
     }
 
-    public String GetAnimalName(){
-        return(this.animalName);
+    public Animal(String animalType, String animalName, int animalAge, int animalHealthRating, int animalHungerLevel,
+                  int animalState, String animalPreferredFood) {
+        this.animalType = animalType;
+        this.animalName = animalName;
+        this.animalAge = animalAge;
+        this.animalHealthRating = animalHealthRating;
+        this.animalHungerLevel = animalHungerLevel;
+        this.animalState = animalState;
+        this.animalPreferredFood = animalPreferredFood;
     }
 
-    public int GetAnimalAge(){
-        return(this.animalAge);
+    public String GetAnimalType() {
+        return (this.animalType);
     }
 
-    public void SetAnimalPreferedFood(String food){
-        this.animalPreferredFood = food;
+    public String GetAnimalName() {
+        return (this.animalName);
+    }
+
+    public int GetAnimalAge() {
+        return (this.animalAge);
     }
 
 }

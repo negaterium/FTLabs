@@ -4,8 +4,12 @@ public class AnimalActivity {
 
     String activityName;
 
-    public void SetActivityName(String name) {
-        this.activityName = name;
+    public AnimalActivity() {
+        // Empty
+    }
+
+    public AnimalActivity(String activityName){
+        this.activityName = activityName;
     }
 
     public String GetActivityName() {
