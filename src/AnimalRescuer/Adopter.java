@@ -13,11 +13,11 @@ public class Adopter {
         this.adopterCash = adopterCash;
     }
 
-    public String GetAdopterName() {
+    public String getAdopterName() {
         return (this.adopterName);
     }
 
-    public int GetAvailableCash() {
+    public int getAvailableCash() {
         return (this.adopterCash);
     }
 

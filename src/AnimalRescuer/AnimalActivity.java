@@ -12,7 +12,7 @@ public class AnimalActivity {
         this.activityName = activityName;
     }
 
-    public String GetActivityName() {
+    public String getActivityName() {
         return (this.activityName);
     }
 }

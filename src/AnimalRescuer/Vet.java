@@ -14,12 +14,12 @@ public class Vet {
         this.vetSpec = vetSpec;
     }
 
-    public String GetVetName() {
+    public String getVetName() {
         return (this.vetName);
     }
 
 
-    public String GetVetspec() {
+    public String getVetspec() {
         return (this.vetSpec);
     }
 }

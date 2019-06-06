@@ -10,9 +10,9 @@ public class Main {
 
         // Display animal data
         System.out.println("------------------------------------------------------");
-        DisplayAnimalData(dog);
+        displayAnimalData(dog);
         System.out.println("------------------------------------------------------");
-        DisplayAnimalData(cat);
+        displayAnimalData(cat);
 
         // Create new adopters
         Adopter mrJohn = new Adopter("John", 1000);
@@ -20,9 +20,9 @@ public class Main {
 
         // Display adopter data
         System.out.println("------------------------------------------------------");
-        DisplayAdopterData(mrJohn);
+        displayAdopterData(mrJohn);
         System.out.println("------------------------------------------------------");
-        DisplayAdopterData(msMary);
+        displayAdopterData(msMary);
 
         // Create a new animal food
         Food dogFood = new Food("meat", 1, true);
@@ -30,9 +30,9 @@ public class Main {
 
         // Display food data
         System.out.println("------------------------------------------------------");
-        DisplayFoodData(dogFood);
+        displayFoodData(dogFood);
         System.out.println("------------------------------------------------------");
-        DisplayFoodData(catFood);
+        displayFoodData(catFood);
 
         // Create new animal activity
         AnimalActivity dogActivity = new AnimalActivity("running");
@@ -40,9 +40,9 @@ public class Main {
 
         // Display animal activity data
         System.out.println("------------------------------------------------------");
-        DisplayAnimalActivityData(dogActivity);
+        displayAnimalActivityData(dogActivity);
         System.out.println("------------------------------------------------------");
-        DisplayAnimalActivityData(catActivity);
+        displayAnimalActivityData(catActivity);
 
         // Create new vets
         Vet primaryVet = new Vet( "John Doe", "generalist");
@@ -50,39 +50,39 @@ public class Main {
 
         // Display vet data
         System.out.println("------------------------------------------------------");
-        DisplayVetData(primaryVet);
+        displayVetData(primaryVet);
         System.out.println("------------------------------------------------------");
-        DisplayVetData(secondaryVet);
+        displayVetData(secondaryVet);
 
     }
 
-    public static void DisplayVetData(Vet specificVet) {
-        System.out.println("Vet name = " + specificVet.GetVetName());
-        System.out.println("Vet spec = " + specificVet.GetVetspec());
+    public static void displayVetData(Vet specificVet) {
+        System.out.println("Vet name = " + specificVet.getVetName());
+        System.out.println("Vet spec = " + specificVet.getVetspec());
     }
 
-    public static void DisplayAnimalActivityData(AnimalActivity specificAnimalActivity) {
-        System.out.println("Animal activity name = " + specificAnimalActivity.GetActivityName());
+    public static void displayAnimalActivityData(AnimalActivity specificAnimalActivity) {
+        System.out.println("Animal activity name = " + specificAnimalActivity.getActivityName());
     }
 
-    public static void DisplayFoodData(Food specificFood) {
-        System.out.println("Food name = " + specificFood.GetFoodName());
-        System.out.println("Food quantity = " + specificFood.GetFoodQuantity());
-        System.out.println("Food availability = " + specificFood.GetFoodAvailability());
+    public static void displayFoodData(Food specificFood) {
+        System.out.println("Food name = " + specificFood.getFoodName());
+        System.out.println("Food quantity = " + specificFood.getFoodQuantity());
+        System.out.println("Food availability = " + specificFood.getFoodAvailability());
     }
 
-    public static void DisplayAnimalData(Animal specificAnimal) {
-        System.out.println("Animal type = " + specificAnimal.GetAnimalType());
-        System.out.println("Animal name = " + specificAnimal.GetAnimalName());
-        System.out.println("Animal age = " + specificAnimal.GetAnimalAge());
-        System.out.println("Animal health rating = " + specificAnimal.animalHungerLevel);
-        System.out.println("Animal hunger level = " + specificAnimal.animalHealthRating);
-        System.out.println("Animal animal state = " + specificAnimal.animalState);
-        System.out.println("Animal preferred food = " + specificAnimal.animalPreferredFood);
+    public static void displayAnimalData(Animal specificAnimal) {
+        System.out.println("Animal type = " + specificAnimal.getAnimalType());
+        System.out.println("Animal name = " + specificAnimal.getAnimalName());
+        System.out.println("Animal age = " + specificAnimal.getAnimalAge());
+        System.out.println("Animal health rating = " + specificAnimal.getAnimalHungerLevel());
+        System.out.println("Animal hunger level = " + specificAnimal.getAnimalHealthRating());
+        System.out.println("Animal animal state = " + specificAnimal.getAnimalState());
+        System.out.println("Animal preferred food = " + specificAnimal.getAnimalPreferredFood());
     }
 
-    public static void DisplayAdopterData(Adopter specificAdopter) {
-        System.out.println("Adopter name = " + specificAdopter.GetAdopterName());
-        System.out.println("Adopter cash value = " + specificAdopter.GetAvailableCash());
+    public static void displayAdopterData(Adopter specificAdopter) {
+        System.out.println("Adopter name = " + specificAdopter.getAdopterName());
+        System.out.println("Adopter cash value = " + specificAdopter.getAvailableCash());
     }
 }

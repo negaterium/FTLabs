@@ -16,17 +16,17 @@ public class Food {
         this.foodAvailable = foodAvailable;
     }
 
-    public String GetFoodName() {
+    public String getFoodName() {
         return (this.foodName);
     }
 
 
-    public int GetFoodQuantity() {
+    public int getFoodQuantity() {
         return (this.foodQuantity);
     }
 
 
-    public Boolean GetFoodAvailability() {
+    public Boolean getFoodAvailability() {
         return (this.foodAvailable);
     }
 

@@ -24,16 +24,33 @@ public class Animal {
         this.animalPreferredFood = animalPreferredFood;
     }
 
-    public String GetAnimalType() {
+    public String getAnimalType() {
         return (this.animalType);
     }
 
-    public String GetAnimalName() {
+    public String getAnimalName() {
         return (this.animalName);
     }
 
-    public int GetAnimalAge() {
+    public int getAnimalAge() {
         return (this.animalAge);
     }
+
+    public int getAnimalHealthRating() {
+        return (this.animalHealthRating);
+    }
+
+    public int getAnimalHungerLevel() {
+        return (this.animalHungerLevel);
+    }
+
+    public int getAnimalState() {
+        return (this.animalState);
+    }
+
+    public String getAnimalPreferredFood() {
+        return (this.animalPreferredFood);
+    }
+
 
 }
