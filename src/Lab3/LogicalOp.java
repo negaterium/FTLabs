@@ -103,6 +103,11 @@ public class LogicalOp {
         return myList[listLength];
     }
 
+    //--------------------------------------------------------------------
+    // For Functions
+
+
+
     public void displayListTo100(int nb) {
         if (nb > 100)
             System.out.println("Numarul este mai mare de 100");
