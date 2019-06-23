@@ -5,12 +5,15 @@ public class Main {
     public static void main(String[] args) {
 
         // Create some animals with specific data
-        Animal dog = new Animal("dog", "Rex", 3, 8, 5, 9, "meat");
+        Dog pug = new Dog();
+        setAnimalData(pug);
+        pug.setHasFunnyTail(true);
+
         Animal cat = new Animal("cat", "Fluffy", 2, 10, 9, 7, "milk");
 
         // Display animal data
         System.out.println("------------------------------------------------------");
-        displayAnimalData(dog);
+        displayDogData(pug);
         System.out.println("------------------------------------------------------");
         displayAnimalData(cat);
 
@@ -71,6 +74,16 @@ public class Main {
         System.out.println("Food availability = " + specificFood.getFoodAvailable());
     }
 
+    public static void setAnimalData(Animal specificAnimal) {
+        specificAnimal.setAnimalName("Puckie");
+        specificAnimal.setAnimalType("dog");
+        specificAnimal.setAnimalAge(3);
+        specificAnimal.setAnimalHealthRating(9);
+        specificAnimal.setAnimalHungerLevel(5);
+        specificAnimal.setAnimalState(7);
+        specificAnimal.setAnimalPreferredFood("meat");
+    }
+
     public static void displayAnimalData(Animal specificAnimal) {
         System.out.println("Animal type = " + specificAnimal.getAnimalType());
         System.out.println("Animal name = " + specificAnimal.getAnimalName());
@@ -80,6 +93,12 @@ public class Main {
         System.out.println("Animal animal state = " + specificAnimal.getAnimalState());
         System.out.println("Animal preferred food = " + specificAnimal.getAnimalPreferredFood());
     }
+
+    public static void displayDogData(Dog specificDog) {
+        displayAnimalData(specificDog);
+        System.out.println("Dog has funny tail = " + specificDog.hasFunnyTail());
+    }
+
 
     public static void displayAdopterData(Adopter specificAdopter) {
         System.out.println("Adopter name = " + specificAdopter.getAdopterName());
