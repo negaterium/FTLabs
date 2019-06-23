@@ -2,7 +2,7 @@ package AnimalRescuer;
 
 public class AnimalActivity {
 
-    String activityName;
+    private String activityName;
 
     public AnimalActivity() {
         // Empty
@@ -12,7 +12,12 @@ public class AnimalActivity {
         this.activityName = activityName;
     }
 
+
     public String getActivityName() {
-        return (this.activityName);
+        return activityName;
+    }
+
+    public void setActivityName(String activityName) {
+        this.activityName = activityName;
     }
 }

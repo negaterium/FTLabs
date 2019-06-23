@@ -289,4 +289,32 @@ public class LogicalOp {
         }
     }
 
+    public void CozaLozaWoza() {
+        int count1 = 1, count2 = 1;
+        int mod3, mod5, mod7;
+        System.out.println("_____________________________");
+        System.out.println("Afisare numere de la 1 la 110");
+        while (count1 <= 110) {
+            while (count2 <= 11) {
+                mod3 = count1 % 3;
+                mod5 = count1 % 5;
+                mod7 = count1 % 7;
+                if (mod3 == 0 && mod5 != 0 && mod7 != 0) System.out.print("Coza ");
+                else if (mod3 == 0 && mod5 == 0 && mod7 != 0) System.out.print("CozaLoza ");
+                else if (mod3 == 0 && mod5 == 0 && mod7 == 0) System.out.print("CozaLozaWoza ");
+                else if (mod3 == 0 && mod5 != 0 && mod7 == 0) System.out.print("CozaWoza ");
+                else if (mod3 != 0 && mod5 == 0 && mod7 != 0) System.out.print("Loza ");
+                else if (mod3 != 0 && mod5 == 0 && mod7 == 0) System.out.print("WozaLoza ");
+                else if (mod3 != 0 && mod5 != 0 && mod7 == 0) System.out.print("Woza ");
+                else System.out.print(count1 + " ");
+                count2++;
+                count1++;
+            }
+            System.out.println("\n");
+            count2 = 1;
+        }
+    }
+
+
 }
+

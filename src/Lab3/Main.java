@@ -129,6 +129,10 @@ public class Main {
         System.out.println("Numerele Fibonacci pana la n");
         myOp.fibonacci(20);
 
+        System.out.println("-------------------------------------");
+        System.out.println("Something something Woza");
+        myOp.CozaLozaWoza();
+
 
     }
 }

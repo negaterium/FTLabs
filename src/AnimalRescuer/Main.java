@@ -45,7 +45,7 @@ public class Main {
         displayAnimalActivityData(catActivity);
 
         // Create new vets
-        Vet primaryVet = new Vet( "John Doe", "generalist");
+        Vet primaryVet = new Vet("John Doe", "generalist");
         Vet secondaryVet = new Vet("Mary Jane", "surgery");
 
         // Display vet data
@@ -58,7 +58,7 @@ public class Main {
 
     public static void displayVetData(Vet specificVet) {
         System.out.println("Vet name = " + specificVet.getVetName());
-        System.out.println("Vet spec = " + specificVet.getVetspec());
+        System.out.println("Vet spec = " + specificVet.getVetSpec());
     }
 
     public static void displayAnimalActivityData(AnimalActivity specificAnimalActivity) {
@@ -68,7 +68,7 @@ public class Main {
     public static void displayFoodData(Food specificFood) {
         System.out.println("Food name = " + specificFood.getFoodName());
         System.out.println("Food quantity = " + specificFood.getFoodQuantity());
-        System.out.println("Food availability = " + specificFood.getFoodAvailability());
+        System.out.println("Food availability = " + specificFood.getFoodAvailable());
     }
 
     public static void displayAnimalData(Animal specificAnimal) {
@@ -83,6 +83,8 @@ public class Main {
 
     public static void displayAdopterData(Adopter specificAdopter) {
         System.out.println("Adopter name = " + specificAdopter.getAdopterName());
-        System.out.println("Adopter cash value = " + specificAdopter.getAvailableCash());
+        System.out.println("Adopter cash value = " + specificAdopter.getAdopterCash());
+
+
     }
 }
