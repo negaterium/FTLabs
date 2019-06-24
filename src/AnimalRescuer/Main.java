@@ -5,15 +5,22 @@ public class Main {
     public static void main(String[] args) {
 
         // Create some animals with specific data
+        // Obiect cu constructor fara parametrii
         Dog pug = new Dog();
         setAnimalData(pug, "Puckie", "dog", 3, 8, 4, 9, "meat");
         pug.setHasFunnyTail(true);
         pug.setBarks(false);
+        // Obiect cu constructor cu parametrii
+        Dog wolfdog = new Dog(false, true, "wolfdog", "Rex", 5, 9, 8, 10, "meat" );
+
+        // Obiect cu constructor cu parametrii, dar fara mostenire
         Animal cat = new Animal("cat", "Fluffy", 2, 10, 9, 7, "milk");
 
         // Display animal data
         System.out.println("------------------------------------------------------");
         displayDogData(pug);
+        System.out.println("------------------------------------------------------");
+        displayDogData(wolfdog);
         System.out.println("------------------------------------------------------");
         displayAnimalData(cat);
 
@@ -109,7 +116,13 @@ public class Main {
     }
 
     public static void displayDogData(Dog specificDog) {
-        displayAnimalData(specificDog);
+        System.out.println("Dog type = " + specificDog.getAnimalType());
+        System.out.println("Dog name = " + specificDog.getAnimalName());
+        System.out.println("Dog age = " + specificDog.getAnimalAge());
+        System.out.println("Dog health rating = " + specificDog.getAnimalHungerLevel());
+        System.out.println("Dog hunger level = " + specificDog.getAnimalHealthRating());
+        System.out.println("Dog animal state = " + specificDog.getAnimalState());
+        System.out.println("Dog preferred food = " + specificDog.getAnimalPreferredFood());
         System.out.println("Dog has funny tail = " + specificDog.hasFunnyTail());
         System.out.println("Dog barks ? " + specificDog.getBarks());
     }

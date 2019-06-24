@@ -79,7 +79,4 @@ public class Animal {
         this.animalState = animalState;
         this.animalPreferredFood = animalPreferredFood;
     }
-
-
-
 }
