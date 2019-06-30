@@ -1,9 +1,9 @@
 package Lab3;
 
 public class Calculator {
-    int firstNumber, secondNumber;
-    double result;
-    String operation;
+    private int firstNumber, secondNumber;
+    private double result;
+    private String operation;
 
     public Calculator() {
         // Empty constructor
@@ -25,5 +25,54 @@ public class Calculator {
         if (this.operation.equals("/"))
             result = this.firstNumber / this.secondNumber;
         System.out.println("Rezultatul operatiei " + this.operation + " este : " + result);
+    }
+
+    public int adunare(int nbOne, int nbTwo) {
+        return (nbOne + nbTwo);
+    }
+
+    public double adunare(double nbOne, double nbTwo) {
+        return (nbOne + nbTwo);
+    }
+
+    public double adunare(double nbOne, double nbTwo, double nbTree) {
+        return (nbOne + nbTwo + nbTree);
+    }
+
+    public int scadere(int nbOne, int nbTwo, int nbThree, int nbFour) {
+        return (nbOne - nbTwo - nbThree - nbFour);
+    }
+
+    public double scadere(double nbOne, double nbTwo) {
+        return (nbOne + nbTwo);
+    }
+
+    public double scadere(double nbOne, double nbTwo, double nbTree) {
+        return (nbOne + nbTwo + nbTree);
+    }
+
+    public int inmultire(int nbOne, int nbTwo) {
+        return (nbOne * nbTwo);
+    }
+
+    public double inmultire(double nbOne, double nbTwo) {
+        return (nbOne * nbTwo);
+    }
+
+    public double inmultire(double nbOne, double nbTwo, double nbTree) {
+        return (nbOne * nbTwo * nbTree);
+    }
+
+    public int impartire(int nbOne, int nbTwo, int nbThree, int nbFour) {
+        return (nbOne / nbTwo / nbThree / nbFour);
+    }
+
+    public double impartire(double nbOne, double nbTwo) {
+        return (nbOne / nbTwo);
+    }
+
+    public double impartire(double nbOne, double nbTwo, double nbTree) {
+        return (nbOne / nbTwo / nbTree);
+
     }
 }

@@ -1,12 +1,29 @@
 package Lab13;
 
+import Lab3.Calculator;
+
 public class Main {
     public static void main(String[] args) {
 
         LogicalOp13 myOp = new LogicalOp13();
+        Calculator myCalculator = new Calculator();
 
-        // Tema -Lab 13 -Java Arrays
+        // Tema obligatorie - Lab 13 - Java Arrays
+
+        // P1 - Overload metode din Calculator
+        System.out.println("-------------------------------------");
+        System.out.println("Overload metode din clasa Calculator");
+        System.out.println("Adunare int cu int -> " + myCalculator.adunare(123, 345));
+        System.out.println("Adunare float cu float -> " + myCalculator.adunare(123.1, 345.5));
+        System.out.println("Adunare float cu float cu float -> " + myCalculator.adunare(123.1, 345.5, 654.1223));
+        System.out.println("Scadere int cu int cu int cu int -> " + myCalculator.scadere(999, 222, 111, 222));
+        System.out.println("Inmultire int cu int -> " + myCalculator.inmultire(123, 345));
+        System.out.println("Inmultire float cu float -> " + myCalculator.inmultire(123.1, 345.5));
+        System.out.println("Inmultire float cu float cu float -> " + myCalculator.inmultire(123.1, 345.5, 654.1223));
+        System.out.println("Impartire int cu int cu int cu int-> " + myCalculator.impartire(88888, 5, 3, 2));
+
         // P2 - Metoda load array cu 100 valori
+        System.out.println("-------------------------------------");
         System.out.println("Afisare valori dintr-un array ");
         myOp.loadArray100Values(100);
         // P3 - Metoda load array cu  valori pare
