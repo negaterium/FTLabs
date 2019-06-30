@@ -65,7 +65,7 @@ public class Main {
         System.out.println("Returnare array fara un anumit numar - invalid case - will return an array with empty values/0");
         myOp.afisareArray(myOp.returnArrayFaraNumar(intArrayP8, 3333));
 
-        // P9 - Returnare al doilea cel mai mic numar dintr-un array
+        // P9 si Optional P1 - Returnare al doilea cel mai mic numar dintr-un array
         System.out.println("-------------------------------------");
         System.out.println("Returnare al doilea cel mai mic numar dintr-un array");
         int[] intArrayP9 = {55,1,8,100,7,56,22,1000};
@@ -80,5 +80,45 @@ public class Main {
         myOp.afisareArray(myOp.copyIntArray(intArrayP10a, intArrayP10b));
 
 
+        ///////////////////////////////////////////////////////////////////////////
+        // Optional P2 - inserare element pe pozitie specifica
+        System.out.println("-------------------------------------");
+        System.out.println("Inserare element intr-un array");
+        int[] intArrayP2Optional = {1,2,3,4,5,6,7};
+        System.out.println("Array-ul initial este");
+        myOp.afisareArray(intArrayP2Optional);
+        System.out.println("Array-ul cu un element inserat pe o pozitie este");
+        myOp.afisareArray(myOp.inserareElementInArray(intArrayP2Optional, 100, 2));
+
+        // Optional P3 - Afisare cel mai mic si cel mai mare numar dintr-un array
+        System.out.println("-------------------------------------");
+        System.out.println("Afisare cel mai mic si cel mai mare numar dintr-un array");
+        int[] intArrayP3Optional = {55,1,8,100,7,56,22,1000};
+        myOp.afisareCMM(intArrayP3Optional);
+
+        // Optional P4 - Inversare valori dintr-un array
+        System.out.println("-------------------------------------");
+        System.out.println("Inversarea valorilor dintr-un array");
+        int[] intArrayP4Optional = {55,1,8,100,7,56,22,1000};
+        myOp.afisareArray(myOp.inversareValoriArray(intArrayP4Optional));
+
+        // Optional P5 - Afisare duplicate array
+        System.out.println("-------------------------------------");
+        System.out.println("Afisare duplicate array");
+        int[] intArrayP5Optional = {55,1,1,100,7,56,3,3};
+        myOp.afisareDuplicateArray(intArrayP5Optional);
+
+        // Optional P6 - Afisare elemente comune din string arrays
+        System.out.println("-------------------------------------");
+        System.out.println("Afisare duplicate array");
+        String[] stringArrayP6OptionalA = {"one", "two", "three"};
+        String[] stringArrayP6OptionalB = {"one", "four", "five", "one"};
+        myOp.afisareElementeComune(stringArrayP6OptionalA, stringArrayP6OptionalB);
+
+        // Optional P7 - Returnare array ordonat
+        System.out.println("-------------------------------------");
+        System.out.println("Afisare array ordonat crescator");
+        int[] intArrayP7Optional = {55,1,1,100,7,56,3,3,24,67};
+        myOp.afisareArray(myOp.returnareArrayOrdonat(intArrayP7Optional));
     }
 }

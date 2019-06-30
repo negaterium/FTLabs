@@ -111,7 +111,7 @@ public class LogicalOp13 {
         } else return emptyArray;
     }
 
-    // P9 - Returnare al doilea cel mai mic numar dintr-un array
+    // P9 si optional P1 - Returnare al doilea cel mai mic numar dintr-un array
     public int returnareAlDoileNumarMic(int[] myArray) {
 
         Arrays.sort(myArray);
@@ -120,9 +120,78 @@ public class LogicalOp13 {
 
     // P10 - Copy date dintr-un array in altul
     public int[] copyIntArray(int[] array1, int[] array2) {
-        for (int counter=0; counter<array2.length; counter++)
+        for (int counter = 0; counter < array2.length; counter++)
             array2[counter] = array1[counter];
         return array2;
+    }
+
+    // Optional P2 - inserare element pe pozitie specifica
+    public int[] inserareElementInArray(int[] myArray, int element, int position) {
+        if (position >= 0 && position < myArray.length) {
+            myArray[position] = element;
+            System.out.println("Elementul " + element + " a fost inserat pe pozitia " + position);
+            return myArray;
+        } else {
+            System.out.println("Pozitia specificate este invalida, array-ul este nemodificat");
+            return myArray;
+        }
+    }
+
+    // Optional P3 - Afisare cel mai mic si cel mai mare numar dintr-un array
+    public void afisareCMM(int[] myArray) {
+        Arrays.sort(myArray);
+        System.out.println("Cel mai mic numar din array este: " + myArray[0]);
+        System.out.println("Cel mai mare numar din array este: " + myArray[myArray.length - 1]);
+    }
+
+    // Optional P4 - Inversare valori din array
+    public int[] inversareValoriArray(int[] myArray) {
+        int[] internalArray = new int[myArray.length];
+        int inverseCounter = myArray.length - 1;
+        for (int counter = 0; counter < myArray.length; counter++) {
+            internalArray[counter] = myArray[inverseCounter];
+            inverseCounter--;
+        }
+        return internalArray;
+    }
+
+    // Optional P5- Afisare duplicate array
+    public void afisareDuplicateArray(int[] myArray) {
+        Arrays.sort(myArray);
+        for (int counter = 0; counter < myArray.length - 1; counter++)
+            if (myArray[counter] == myArray[counter + 1])
+                System.out.println("Duplicate value -> " + myArray[counter]);
+    }
+
+    // Optional P6 - Afisare elemente comune in arrays de strings
+
+    public void afisareElementeComune(String[] myArray1, String[] myArray2) {
+        Arrays.sort(myArray1);
+        Arrays.sort(myArray2);
+        String[] internalArray = new String[myArray1.length];
+        int counter1 = 0, counter3 = 0;
+        while (counter1 < myArray1.length) {
+            for (int counter2 = 0; counter2 < myArray2.length; counter2++)
+                if (myArray1[counter1] == myArray2[counter2]) {
+                    internalArray[counter3] = myArray1[counter1];
+                    counter3++;
+                }
+            counter1++;
+
+        }
+
+        for (int ctemp = 0; ctemp < internalArray.length; ctemp++) {
+            if (internalArray[ctemp] != null)
+                System.out.println("Element comun ->" + internalArray[ctemp]);
+        }
+
+    }
+
+    // Optional P7 - Returnare array ordonat
+    public int[] returnareArrayOrdonat(int[] myArray) {
+
+        Arrays.sort(myArray);
+        return myArray;
     }
 
 }
