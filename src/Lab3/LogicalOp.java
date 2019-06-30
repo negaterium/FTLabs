@@ -319,62 +319,6 @@ public class LogicalOp {
         }
     }
 
-    // Tema -Lab 13 -Java Arrays
-    // P2 - Metoda load array cu 100 valori
-
-    public void loadArray100Values(int nbValori) {
-        int[] myArray = new int[nbValori];
-        for (int counter = 0; counter < nbValori; counter++) {
-            myArray[counter] = counter;
-            System.out.println("Array position <" + counter + "> has value <" + myArray[counter] + ">");
-        }
-    }
-
-    // P3 - Metoda load array cu x valori pare pana la 100
-    public int[] loadArrayEvenValues(int myArray[]) {
-        int counter2=0;
-        int arrayLength = myArray.length;
-        int[] internalArray = new int[arrayLength/2];
-        for (int counter1 = 0; counter1 < arrayLength; counter1++) {
-            if (counter1 % 2 == 0) {
-                internalArray[counter2] = counter1;
-                counter2++;
-            }
-        }
-        return internalArray;
-    }
-
-    // P4 - Metoda calculare media aritmetica a valorilor dintr-un array
-    public int calculateMediaArray(int myArray[]) {
-        int suma=0;
-        int arrayLength = myArray.length;
-        for (int counter = 0; counter < arrayLength; counter++)
-                suma+=myArray[counter];
-        return suma/arrayLength;
-    }
-
-    // P5 - Metoda comparare strings
-    public boolean vrificareStringArrays(String[] arrayOfStrings, String compareString) {
-        for (int counter = 0; counter < arrayOfStrings.length; counter++) {
-            if (arrayOfStrings[counter].equals(compareString)) return true;
-        }
-        return false;
-    }
-
-    // P6 - Metoda comparare valori int
-    public int vrificareIntArrays(int[] arrayOfInt, int compareInt) {
-        for (int counter = 0; counter < arrayOfInt.length; counter++) {
-            if (arrayOfInt[counter] == compareInt) return counter;
-        }
-        return 0;
-    }
-
-    public void afisareArray(int[] myArray) {
-        for (int counter = 0; counter < myArray.length; counter++) {
-            System.out.println("Array position <" + counter + "> has value <" + myArray[counter] + ">");
-        }
-    }
-
 
 
 }

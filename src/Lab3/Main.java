@@ -133,34 +133,5 @@ public class Main {
         System.out.println("Something something Woza");
         myOp.CozaLozaWoza();
 
-        // Tema -Lab 13 -Java Arrays
-        // P2 - Metoda load array cu 100 valori
-        System.out.println("Afisare valori dintr-un array ");
-        myOp.loadArray100Values(100);
-        // P3 - Metoda load array cu  valori pare
-        System.out.println("-------------------------------------");
-        System.out.println("Afisare valori pare dintr-un array ");
-        int nbValori = 100;
-        int[] emptyArray = new int[nbValori];
-        myOp.afisareArray(myOp.loadArrayEvenValues(emptyArray));
-        // P4 - Metoda calculare media aritmetica valori din array
-        System.out.println("-------------------------------------");
-        System.out.println("Afisare media valori dintr-un array ");
-        int[] arrayCuValori = {1, 4, 53, 29, 199, 200};
-        System.out.println("Media valori din array este: " + myOp.calculateMediaArray(arrayCuValori));
-
-        // P5 - Metoda comparare strings
-        System.out.println("-------------------------------------");
-        System.out.println("Comparare strings ");
-        String[] stringArray = {"one", "two", "three"};
-        System.out.println("Comparam <test> cu array values -> " + myOp.vrificareStringArrays(stringArray, "test"));
-        System.out.println("Comparam <one> cu array values -> " + myOp.vrificareStringArrays(stringArray, "one"));
-
-        // P6 - Metoda comparare integers
-        System.out.println("-------------------------------------");
-        System.out.println("Comparare integers si returnare pozitie in array ");
-        int[] intArray = {3,4,7,8,9,12,33};
-        System.out.println("Comparam <12> cu array values -> " + myOp.vrificareIntArrays(intArray, 12));
-        System.out.println("Comparam <555> cu array values -> " + myOp.vrificareIntArrays(intArray, 555)); //for invalid case
     }
 }
