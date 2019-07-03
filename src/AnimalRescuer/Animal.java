@@ -79,4 +79,14 @@ public class Animal {
         this.animalState = animalState;
         this.animalPreferredFood = animalPreferredFood;
     }
+
+    public void look(int intensity)
+    {
+        System.out.println("The cat looks at you with intensity :" + intensity);
+    }
+
+    public void look(String state)
+    {
+        System.out.println("The dog looks at you with " + state);
+    }
 }

@@ -16,6 +16,10 @@ public class Dog extends Animal {
         this.hasFunnyTail = hasFunnyTail;
     }
 
+    public void dance(){
+        System.out.println("Dog dance!!!");
+    }
+
     public boolean getBarks() {
         return barks;
     }
