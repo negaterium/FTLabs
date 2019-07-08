@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Animal {
+public abstract class Animal {
     public String getAnimalType() {
         return animalType;
     }
@@ -57,6 +57,7 @@ public class Animal {
         this.animalPreferredFood = animalPreferredFood;
     }
 
+
     private String animalType;
     private String animalName;
     private int animalAge;
@@ -80,13 +81,8 @@ public class Animal {
         this.animalPreferredFood = animalPreferredFood;
     }
 
-    public void look(int intensity)
-    {
-        System.out.println("The cat looks at you with intensity :" + intensity);
-    }
+    public abstract void look(String text);
+    public abstract void animalEats(String food);
 
-    public void look(String state)
-    {
-        System.out.println("The dog looks at you with " + state);
-    }
+
 }

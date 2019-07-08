@@ -3,7 +3,6 @@ package AnimalRescuer;
 public class Cat extends Animal {
 
 
-
     private boolean hasFluffyTail;
     private boolean meows;
 
@@ -11,14 +10,13 @@ public class Cat extends Animal {
     }
 
     public Cat(boolean hasFluffyTail, boolean meows, String animalType, String animalName, int animalAge,
-               int animalHealthRating, int animalHungerLevel, int animalState, String animalPreferredFood)
-    {
+               int animalHealthRating, int animalHungerLevel, int animalState, String animalPreferredFood) {
         super(animalType, animalName, animalAge, animalHealthRating, animalHungerLevel, animalState, animalPreferredFood);
         this.meows = meows;
         this.hasFluffyTail = hasFluffyTail;
     }
 
-    public void dance(){
+    public void dance() {
         System.out.println("Cat dance!!!");
     }
 
@@ -38,9 +36,13 @@ public class Cat extends Animal {
         this.meows = meows;
     }
 
-    public void look(int intensity)
-    {
+    @Override
+    public void look(String intensity) {
         System.out.println("The cat HOWLS at you with intensity :" + intensity);
     }
 
+    @Override
+    public void animalEats(String food) {
+        System.out.println("The cat eats :" + food);
+    }
 }

@@ -14,24 +14,25 @@ public class Main {
         Dog wolfdog = new Dog(false, true, "wolfdog", "Rex", 5, 9, 8, 10, "meat" );
 
         // Obiect cu constructor cu parametrii, dar fara mostenire
-        Animal cat = new Animal("cat", "Fluffy", 2, 10, 9, 7, "milk");
+
         Cat specialCat = new Cat(true, true, "cat", "Meoni", 4, 8, 9, 9, "mice");
-        Dog spcialDog = new Dog(false, true, "specialdog", "Bubu", 5, 9, 8, 10, "meat" );
+        Dog specialDog = new Dog(false, true, "specialdog", "Bubu", 5, 9, 8, 10, "meat" );
 
 
         // Check same method name for 2 different objects
         specialCat.dance();
-        spcialDog.dance();
+        specialDog.dance();
 
         // Check same method name for 2 different objects, inherited from Animal class
-        spcialDog.look("bland face");
-        specialCat.look(9999);
+        specialDog.look("bland face");
+        specialDog.animalEats("carrots!!");
+        specialCat.look("9999");
 
         // Check overloaded method in Cat compared to Animal class
         Cat overCat = new Cat(false, false, "cat", "Meoni", 4, 8, 9, 9, "mice");
-        Animal oldCat = new Animal("cat", "Meoni", 4, 8, 9, 9, "mice");
-        overCat.look(9999);  // from Cat, overrides Animal
-        oldCat.look(1111);  // from Animal
+        overCat.look("9999");  // from Cat, overrides Animal
+        overCat.animalEats("some cheese");
+
 
 
         // Display animal data
@@ -40,7 +41,7 @@ public class Main {
         System.out.println("------------------------------------------------------");
         displayDogData(wolfdog);
         System.out.println("------------------------------------------------------");
-        displayAnimalData(cat);
+
 
         // Create new adopters
         Adopter mrJohn = new Adopter();
