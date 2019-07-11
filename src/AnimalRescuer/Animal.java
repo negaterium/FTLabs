@@ -84,5 +84,4 @@ public abstract class Animal {
     public abstract void look(String text);
     public abstract void animalEats(String food);
 
-
 }
