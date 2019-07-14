@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Cat extends Animal {
+public class Cat extends Animal{
 
 
     private boolean hasFluffyTail;
@@ -37,12 +37,14 @@ public class Cat extends Animal {
     }
 
     @Override
-    public void look(String intensity) {
-        System.out.println("The cat HOWLS at you with intensity :" + intensity);
+    public void look(String face) {
+        System.out.println("Cat looks at you with " + face + "face");
     }
 
     @Override
-    public void animalEats(String food) {
-        System.out.println("The cat eats :" + food);
+    public void animalEats(String food)
+    {
+        System.out.println("Cat eats :" + food);
     }
+
 }

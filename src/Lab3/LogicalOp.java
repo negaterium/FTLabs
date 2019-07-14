@@ -319,6 +319,14 @@ public class LogicalOp {
         }
     }
 
+    public void wait(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (Exception e) {
+            System.out.println("There was a ... time problem somewhere ->>> " + e.getMessage());
+        }
+
+    }
 
 
 }

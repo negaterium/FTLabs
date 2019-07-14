@@ -1,6 +1,7 @@
 package Lab13;
 
 import java.util.Arrays;
+import java.util.*;
 
 public class LogicalOp13 {
     public void LogicalOp13() {
@@ -193,6 +194,21 @@ public class LogicalOp13 {
         Arrays.sort(myArray);
         return myArray;
     }
+
+    // lab 15 - P5 - Verificare valoare in array
+    public void verValueInArray(int myArray[], int val) {
+
+        boolean exitCriteria = true;
+        try {
+
+            System.out.println("Valoarea de pe pozitia: " + val + " este: " + myArray[val]);
+            exitCriteria = true;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+        }
+
+    }
+
 
 }
 

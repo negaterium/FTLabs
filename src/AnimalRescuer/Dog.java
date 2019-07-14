@@ -1,6 +1,6 @@
 package AnimalRescuer;
 
-public class Dog extends Animal {
+public class Dog extends Animal{
 
     private boolean hasFunnyTail;
     private boolean barks;
@@ -38,7 +38,7 @@ public class Dog extends Animal {
 
     @Override
     public void look(String face) {
-        System.out.println("Dogs look at you with " + face + "face");
+        System.out.println("Dog looks at you with " + face + "face");
     }
 
     @Override
@@ -46,7 +46,5 @@ public class Dog extends Animal {
     {
         System.out.println("The dog eats :" + food);
     }
-
-
 
 }
