@@ -44,7 +44,10 @@ public class Calculator {
     }
 
     public double scadere(double nbOne, double nbTwo) {
-        return (nbOne + nbTwo);
+        return (nbOne - nbTwo);
+    }
+    public int scadere(int nbOne, int nbTwo) {
+        return (nbOne - nbTwo);
     }
 
     public double scadere(double nbOne, double nbTwo, double nbTree) {
@@ -68,11 +71,31 @@ public class Calculator {
     }
 
     public double impartire(double nbOne, double nbTwo) {
-        return (nbOne / nbTwo);
+        try {
+            return (nbOne / nbTwo);
+        }
+        catch (Exception e){
+            System.out.println("Error : " + e.getMessage());
+        }
+        return (0);
     }
 
+    public float impartire(int nbOne, int nbTwo) {
+        try {
+            return (nbOne / nbTwo);
+        }
+        catch (Exception e){
+            System.out.println("Error : " + e.getMessage());
+        }
+        return (0);
+    }
     public double impartire(double nbOne, double nbTwo, double nbTree) {
-        return (nbOne / nbTwo / nbTree);
-
+        try {
+            return (nbOne / nbTwo / nbTree);
+        }
+        catch (Exception e){
+            System.out.println("Error : " + e.getMessage());
+        }
+        return (0);
     }
 }
